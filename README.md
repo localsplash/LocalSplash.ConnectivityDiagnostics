@@ -1,0 +1,2 @@
+# LocalSplash Connectivity Diagnostics
+Standalone PowerShell 5.1-compatible console utility. Defaults: public ICMP `1.1.1.1`, internal ICMP `172.83.90.32`. Run: `pwsh -File ./ConnectivityDiagnostics.ps1`. One check: add `-Once -NonInteractive`. Press C to copy a sanitized report or Q to quit. Configure targets and timeouts in config.json. Test with `pwsh -File ./tests/Run-Tests.ps1`. Final Windows 5.1 clipboard/key/execution-policy smoke test remains required.
