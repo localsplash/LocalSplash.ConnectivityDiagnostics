@@ -1,4 +1,5 @@
-[CmdletBinding()]param([string]$ConfigPath=(Join-Path $PSScriptRoot 'config.json'),[switch]$Once,[switch]$NonInteractive)
+[CmdletBinding()]param([string]$ConfigPath,[switch]$Once,[switch]$NonInteractive)
+if([string]::IsNullOrWhiteSpace($ConfigPath)){$ConfigPath=Join-Path -Path $PSScriptRoot -ChildPath 'config.json'}
 Set-StrictMode -Version 2.0
 $ErrorActionPreference='Stop'
 function New-State($Name){[pscustomobject]@{Name=$Name;Status='Unknown';Successes=0;Failures=0;ConsecutiveFailures=0;LastSuccess=$null;LastFailure=$null;LatencyMs=$null;Error=$null}}
