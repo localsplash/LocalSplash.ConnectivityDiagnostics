@@ -1,0 +1,1 @@
+{"publicTarget":"1.1.1.1","internalTarget":"172.83.90.32","intervalSeconds":10,"timeoutMilliseconds":2000,"publicIpEndpoint":"https://api.ipify.org?format=json","httpTimeoutSeconds":5}
